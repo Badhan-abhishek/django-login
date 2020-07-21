@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'login_app/css/main.css' %}" />
+    <title>FeedByMe</title>
+  </head>
+  <body>
+    <div class="content">
+      <h2>Password reset complete</h2>
+      <p>
+        Your password has been set. You may go ahead and
+        <a href="{% url 'index' %}">log in</a> now.
+      </p>
+    </div>
+  </body>
+</html>

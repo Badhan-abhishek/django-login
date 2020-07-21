@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'login_app/css/main.css' %}" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form method="post">
+        {% csrf_token %}
+        <span>/Register</span>
+        <label for="username">
+          Username
+        </label>
+        {{ form.username }}
+        <label for="email">
+          Email
+        </label>
+        {{ form.email }}
+        <label for="password1">
+          Password
+        </label>
+        {{ form.password1 }}
+        <label for="password2">
+          Repeat password
+        </label>
+        {{ form.password2 }}
+        <input class="submit" type="submit" value="Register" />
+      </form>
+      {% for message in messages %}
+      <p class="alert alert-danger">{{ message }}</p>
+      {% endfor %}
+    </div>
+  </body>
+</html>

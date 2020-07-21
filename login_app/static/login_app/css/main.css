@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+body {
+  top: 0;
+  left: 0;
+  margin: 0;
+  font-family: "VT323", monospace;
+  background-color: black;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper form {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 0.2em;
+  font-size: 1.3rem;
+}
+
+.wrapper form label,
+.wrapper form input {
+  margin: 0.4em;
+}
+
+.wrapper form input {
+  border: 2px solid black;
+}
+
+.wrapper form input:focus {
+  box-shadow: 2px 2px 0px black;
+}
+
+.submit:hover {
+  background-color: rgb(189, 186, 186);
+  box-shadow: 2px 2px 0px black;
+}
+
+.logout-btn {
+  float: right;
+  padding: 0.2em;
+  font-size: 1.5rem;
+  border: 2px solid black;
+}
+
+.main .card a {
+  text-decoration: none;
+  color: red;
+}
+
+.logout-btn:hover {
+  box-shadow: 2px 2px 0px black;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 0.2em;
+  font-size: 1.9rem;
+}
+
+.content {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(177, 168, 168);
+}
+
+.content p {
+  padding: 1em;
+}
+
+.button-email {
+  border: 1px solid black;
+}
