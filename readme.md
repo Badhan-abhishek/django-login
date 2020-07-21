@@ -10,7 +10,7 @@ A simple login application made in Django and SQL. It uses django's own authenti
 
 - Clone this repository by this command.
 
-  ``
+  `git clone https://github.com/Badhan-abhishek/django-login`
 
 - Open terminal or CMD in directory where **manage.py** exists.
 - Change SECRET_KEY & database password in **Settings.py**
@@ -30,3 +30,17 @@ A simple login application made in Django and SQL. It uses django's own authenti
 # Usage
 
 Use to integrate in your project. The application is themed uniformly.
+
+# Screenshots
+
+1. Login
+   <img src="readme_assets/images/FeedByMe.png">
+
+2. Register
+   <img src="readme_assets/images/Register.png">
+
+3. Forget password
+   <img src="readme_assets/images/Welcome(1).png">
+
+4. After login
+   <img src="readme_assets/images/Welcome.png">
